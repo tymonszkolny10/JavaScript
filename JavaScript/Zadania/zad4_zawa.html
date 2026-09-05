@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawadzki 2P</title>
+</head>
+<body>
+    <b><br>1) kiedy powstał JavaScript (podaj datę).</b><br>
+    Maj 1995 — stworzony przez Brendana Eicha w Netscape.<br>
+    <b><br>2) dlaczego jest to język skryptowy</b><br>
+    Ponieważ jest interpretowany i wykonywany w czasie uruchomienia, bez potrzeby wcześniejszej kompilacji.<br>
+    <b><br>3) gdzie jest wykonywany JS (klient lub serwer)</b><br>
+    Na kliencie (przeglądarka) i także na serwerze (np. Node.js).<br>
+    <b><br>4) dlaczego jest JS to bezpieczne narzędzie</b><br>
+    W przeglądarce działa w piaskownicy (sandbox) z ograniczonym dostępem do systemu, obowiązuje polityka same-origin.<br>
+    <b><br>5) czy jest to język obiektowy, jeśli tak to dlaczego.</b><br>
+    Tak — obiektowy/obiektowy-prototypowy: obsługuje obiekty i dziedziczenie prototypowe; od ES6 ma też składnię klas.<br>
+    <br>
+    <b><br>6) wymień zalety JS:</b><br>
+    Zaleta1: pozwala tworzyć interaktywne strony i dynamiczne UI.<br>
+    Zaleta2: działa po stronie klienta i serwera (np. Node.js) — uniwersalność.<br>
+    Zaleta3: bogaty ekosystem bibliotek i duża społeczność — szybki rozwój.<br>
+    <b><br>7) Framework to:</b><br>
+    Zestaw narzędzi, bibliotek i konwencji ułatwiających budowę aplikacji (np. React, Angular, Vue).<br>
+    <b><br>8) Do aplikacji mobilnych można użyć Framework:</b><br>
+    Tak — przykłady: React Native, Ionic, Cordova (umożliwiają tworzenie aplikacji mobilnych przy użyciu JS/HTML/CSS).<br>
+    <b><br>9) Aplikacje responsywne to:</b><br>
+    Aplikacje, których wygląd i układ automatycznie dopasowują się do rozmiaru ekranu i urządzenia (responsive design).<br>
+    <b><br>10) Przepisz linię kody pod nimi i wytłumaczenie jak działa ten fragment kodu</b><br>
+    &lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&gt; — tworzy przycisk; po kliknięciu wywołuje funkcję `WinOpen` z argumentem `' '` (np. otwarcie nowego okna).
+    <br>
+    Uwaga: aby wyświetlić znaki `<` i `>` jako tekst w HTML, użyj encji `&lt;` i `&gt;`.
+    <b><br>11) Przepisz linię kody pod nimi i wytłumaczenie jak działa ta linia kodu</b><br>
+    window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); — otwiera nowe okno/przeglądarkę z adresem `obraz.html`, nadaje mu nazwę `okienko` i ustawia opcje wyglądu oraz rozmiaru.
+    - `toolbar=no` → ukrywa pasek narzędzi przeglądarki.
+    - `directories=no` → ukrywa przyciski katalogów (jeśli dostępne).
+    - `menubar=no` → ukrywa pasek menu.
+    - `height=280` → wysokość okna w pikselach.
+    - `width=160` → szerokość okna w pikselach.
+    - `top=200` → położenie od góry ekranu w pikselach.
+    - `left=200` → położenie od lewej ekranu w pikselach.
+    <b><br>12) Opisz następującą instrukcję window.close()</b><br>
+    `window.close()` — zamyka okno przeglądarki. Przeglądarki mogą zablokować zamknięcie okna, jeśli nie zostało ono otwarte przez skrypt (ze względów bezpieczeństwa).
+</body>
+</html>
