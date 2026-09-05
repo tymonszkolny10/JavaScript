@@ -1,0 +1,8 @@
+Gamescope + gamemode - gamemoderun gamescope -W 1920 -H 1080 -r 120 --force-grab-cursor -f -- %command%
+
+Dla modów (chyba); (MWC) - WINEDLLOVERRIDES="winhttp.dll=n,b"
+Dla modów do Fuszery (Melon Loader) - WINEDLLOVERRIDES="version=n,b" %command%
+
+Ograniczenie fps - DXVK_FRAME_RATE=60 %command%
+
+Aby przed odpaleniem gry włączył się skrypt: /home/tymon/Documents/Skrypty/skrypt.sh %command%
