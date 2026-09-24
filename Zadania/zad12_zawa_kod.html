@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawadzki 2P</title>
+</head>
+<body>
+    <textarea cols="130" rows="40">
+        <!DOCTYPE html>
+        <html> 
+        <body>  
+                <html> 
+                <body> 
+                <div style="color:green;font-size:50px;"> 
+                    <script language="JavaScript"> 
+        // Tymon Zawadzki 2P   17.09.2026 
+        // Zadanie 11  
+                    var D1_zaw=prompt("Data1>Data 2 Data1=",""); 
+                    var D2_zaw=prompt("Data1>Data 2 Data2=",""); 
+                    var G1_zaw=prompt("Godzina1>Godzina2 Godzina1=","");
+                    var G2_zaw=prompt("Godzina1>Godzina2 Godzina2=","");
+                    var sekund; 
+                    var a=parseFloat(D1_zaw); 
+                    var b=parseFloat(D2_zaw); 
+                    var c=parseFloat(G1_zaw);
+                    var d=parseFloat(G2_zaw);
+                        sekund=((a-b)*24+c-d)*3600; 
+                    document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+" s"+"<br>"); 
+                        function okno_zamknij_zawadzki() 
+                        { 
+                        window.close() 
+                        } 
+                    </script> 
+                    </div> 
+                <input type="button" value="zamknij okno" onclick="okno_zamknij_zawadzki()"/> 
+                </body> 
+            </html> 
+            </body>
+        </html>
+    </textarea>
+</body>
+</html>
