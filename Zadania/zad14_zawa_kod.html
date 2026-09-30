@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kod zadania 14 - Zawadzki 2P</title>
+</head>
+<body>
+	<textarea cols="100" rows="30" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zawadzki 2P - Zadanie 14</title>
+</head>
+<body>
+	<div style="color: red; font-size: 50px;">
+		<script>
+			var dane_zaw = prompt("Podaj dodatni mianownik m:", "4");
+			var m_zaw = Number(dane_zaw);
+
+			if (dane_zaw === null) {
+				document.write("Anulowano podawanie mianownika.");
+			} else if (!Number.isInteger(m_zaw) || m_zaw <= 0) {
+				document.write("Podaj dodatnią liczbę całkowitą.");
+			} else {
+				var m1_zaw = m_zaw + 1;
+				var m2_zaw = m1_zaw + 1;
+				var mianownik2_zaw = m1_zaw * m2_zaw;
+				var mianownik3_zaw = m_zaw * m1_zaw;
+
+				document.write("m=" + m_zaw + "<br>");
+				document.write("1/" + m_zaw + "=1/" + m2_zaw + " + 1/" + mianownik2_zaw + " + 1/" + mianownik3_zaw);
+			}
+		</script>
+	</div>
+</body>
+</html>
+	</textarea>
+</body>
+</html>

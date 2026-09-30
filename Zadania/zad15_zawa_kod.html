@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kod zadania 15 - Zawadzki 2P</title>
+</head>
+<body>
+	<textarea cols="100" rows="30" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zawadzki 2P - Zadanie 15</title>
+</head>
+<body>
+	<div style="color: red; font-size: 50px;">
+		<script>
+			var dane_zaw = prompt("Podaj dodatni mianownik m:", "3");
+			var m_zaw = Number(dane_zaw);
+
+			if (dane_zaw === null) {
+				document.write("Anulowano podawanie mianownika.");
+			} else if (!Number.isInteger(m_zaw) || m_zaw <= 0) {
+				document.write("Podaj dodatnią liczbę całkowitą.");
+			} else {
+				var mianownik_zaw = 2 * m_zaw;
+
+				document.write("m=" + m_zaw + "<br>");
+				document.write("1/" + m_zaw + "=1/" + mianownik_zaw + " + 1/" + mianownik_zaw);
+			}
+		</script>
+	</div>
+</body>
+</html>
+	</textarea>
+</body>
+</html>
