@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawadzki 2P</title>
+</head>
+<body>
+    <textarea cols="120" rows="53">
+        <!DOCTYPE html> 
+        <html lang="pl">  
+            <head>    
+            <title> Użycie fukcji </title>    
+            <meta charset="utf-8">   
+            </head>  
+            <body> 
+                <div style="color:navy;font-size:50px;"> 
+                    <script language="JavaScript"> 
+                    var a=parseFloat(prompt("a=","")); 
+                    var b=parseFloat(prompt("b=","")); 
+                        
+                        function suma_zaw(a, b) { 
+                        return a + b; 
+                        } 
+
+                        function roznica_zaw(a, b){
+                            return a - b;
+                        }
+
+                        function mnozenie_zaw(a, b){
+                            return a * b;
+                        }
+
+                        function kwadrat_a_zaw(a){
+                            return a ** 2;
+                        }
+
+                        function kwadrat_b_zaw(b){
+                            return b ** 2;
+                        }
+
+                        function dzielenie_zaw(a, b){
+                            return a % b;
+                        }
+
+
+                    document.write("A = "+a+"<br>");
+                    document.write("B = "+b+"<br><br>");
+
+                    document.write("suma = "+suma_zaw(a,b)+"<br>"); 
+                    document.write("różnica = "+roznica_zaw(a,b)+"<br>");
+                    document.write("wynik mnożenia = "+mnozenie_zaw(a,b)+"<br>");
+                    document.write("wynik kwadratu A = "+kwadrat_a_zaw(a)+"<br>");
+                    document.write("wynik kwadratu B = "+kwadrat_b_zaw(b)+"<br>");
+                    document.write("reszta z dzielenia = "+dzielenie_zaw(a,b)+"<br>");
+
+                    </script> 
+                </div> 
+            </body> 
+        </html>
+    </textarea>
+</body>
+</html>
