@@ -28,28 +28,10 @@
 						A_zaw < 0 || B_zaw < 0) {
 					document.write("Podaj dwie liczby naturalne.");
 				} else {
-					var A3_zaw = A_zaw * A_zaw * A_zaw;
-					var skladnik2_zaw = 3 * A_zaw * A_zaw * B_zaw;
-					var skladnik3_zaw = 3 * A_zaw * B_zaw * B_zaw;
-					var B3_zaw = B_zaw * B_zaw * B_zaw;
-					var suma_zaw = A3_zaw + skladnik2_zaw + skladnik3_zaw + B3_zaw;
-					var wynik_zaw = "(" + A_zaw + " + " + B_zaw + ")^3 = " +
-						A_zaw + "^3 + 3*(" + A_zaw + "^2)*(" + B_zaw + ") + " +
-						"3*(" + A_zaw + ")*(" + B_zaw + "^2) + " + B_zaw + "^3 = " +
-						A3_zaw + " + " + skladnik2_zaw + " + " + skladnik3_zaw + " + " +
-						B3_zaw + " = " + suma_zaw;
+					var wynik_zaw = `(${A_zaw} + ${B_zaw})^3 = ${A_zaw}^3 + 3*(${A_zaw}^2)*(${B_zaw}) + 3*(${A_zaw})*(${B_zaw}^2) + ${B_zaw}^3 = ${A_zaw ** 3} + ${3 * A_zaw ** 2 * B_zaw} + ${3 * A_zaw * B_zaw ** 2} + ${B_zaw ** 3} = ${A_zaw ** 3 + 3 * A_zaw ** 2 * B_zaw + 3 * A_zaw * B_zaw ** 2 + B_zaw ** 3}`;
 
-					document.write("<div style='color: navy; font: 28px Arial;'>Wczytane liczby: A=" + A_zaw + " &nbsp; B=" + B_zaw + "</div>");
-					document.write("<div id='wynik_zaw' style='color: navy; font-family: Arial; font-size: 50px; white-space: nowrap;'></div>");
-					document.getElementById("wynik_zaw").textContent = wynik_zaw;
-
-					var canvas_zaw = document.createElement("canvas");
-					var kontekst_zaw = canvas_zaw.getContext("2d");
-					kontekst_zaw.font = "50px Arial";
-					var szerokoscWyniku_zaw = kontekst_zaw.measureText(wynik_zaw).width;
-					var szerokoscOkna_zaw = document.documentElement.clientWidth;
-					var rozmiarCzcionki_zaw = Math.min(50, Math.floor(50 * szerokoscOkna_zaw / szerokoscWyniku_zaw));
-					document.getElementById("wynik_zaw").style.fontSize = Math.max(12, rozmiarCzcionki_zaw) + "px";
+					document.write(`<div style="color: navy; font: 28px Arial;">Wczytane liczby: A=${A_zaw} &nbsp; B=${B_zaw}</div>`);
+					document.write(`<div style="color: navy; font: 50px Arial; overflow-wrap: anywhere;">${wynik_zaw}</div>`);
 				}
 			</script>
 		</body>
