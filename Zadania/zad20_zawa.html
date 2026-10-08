@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+ <head> 
+  <meta charset="UTF-8"> 
+ </head> 
+<body> 
+    < SCRIPT type="text/javascript" src="zad20.js"></SCRIPT> 
+ <script type="text/javascript"> 
+  function AB_zaw() 
+   { 
+    var ax= parseFloat(document.getElementById('ax').value); 
+    var ay= parseFloat(document.getElementById('ay').value); 
+    var bx= parseFloat(document.getElementById('bx').value); 
+    var by= parseFloat(document.getElementById('by').value); 
+    //var b = a*a; 
+        var AB = Math.sqrt(Math.pow((ax - bx),2) + Math.pow((ay - bx),2));
+        document.getElementById("nazwa").innerHTML ="Punkt AB = "+AB.toFixed(2)+" cm^2";  
+   } 
+  function BC_zaw() 
+   { 
+    var bx= parseFloat(document.getElementById('bx').value); 
+    var by= parseFloat(document.getElementById('by').value); 
+    var cx= parseFloat(document.getElementById('cx').value); 
+    var cy= parseFloat(document.getElementById('cy').value); 
+    //var b= 4*a; 
+        var BC = Math.sqrt(Math.pow((bx - cx),2) + Math.pow((by - cx),2));
+        document.getElementById("nazwa").innerHTML ="Punkt BC = "+BC.toFixed(2)+" cm^2";  
+   } 
+   function AC_zaw() 
+   { 
+    var cx= parseFloat(document.getElementById('cx').value); 
+    var cy= parseFloat(document.getElementById('cy').value); 
+    var ax= parseFloat(document.getElementById('ax').value); 
+    var ay= parseFloat(document.getElementById('ay').value); 
+    //var b= 4*a; 
+        var AC = Math.sqrt(Math.pow((cx - ax),2) + Math.pow((cy - ax),2));
+        document.getElementById("nazwa").innerHTML ="Punkt AC = "+AC.toFixed(2)+" cm^2";  
+   } 
+   
+ </script> 
+
+  <h1>Podaj boki trójkąta ABC</h1><br><br> 
+
+  Punkt A, podaj x <input type="text" id="ax" value=" "> cm<br><br><br> 
+  Punkt A, podaj y <input type="text" id="ay" value=" "> cm<br><br><br> 
+
+  Punkt B, podaj x <input type="text" id="bx" value=" "> cm<br><br><br> 
+  Punkt B, podaj y <input type="text" id="by" value=" "> cm<br><br><br> 
+
+  Punkt C, podaj x <input type="text" id="cx" value=" "> cm<br><br><br> 
+  Punkt C, podaj y <input type="text" id="cy" value=" "> cm<br><br><br> 
+
+
+  <input type="button" name="AB" value="Oblicz AB" Onclick="AB_zaw()"><br><br> 
+  <input type="button" name="BC" value="Oblicz BC" Onclick="BC_zaw()"><br><br> 
+  <input type="button" name="AC" value="Oblicz AC" Onclick="AC_zaw()"><br><br> 
+
+
+
+
+
+
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html>
