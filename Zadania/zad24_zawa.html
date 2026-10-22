@@ -1,0 +1,32 @@
+<!DOCTYPE html>   
+<html lang="pl">
+    <head>    
+        <title> proste obliczenia</title>    
+        <meta charset="utf-8">   
+    </head>  
+    <body> 
+        <div style="color:red;font-size:50px;"> 
+            <script language="JavaScript"> 
+            var x1_zaw=prompt("podaj x1 =",""); 
+            var x2_zaw=prompt("podaj x2 =",""); 
+
+            x1_zaw_rad=(Math.PI*x1_zaw) / 180 ;
+            x2_zaw_rad=(Math.PI*x2_zaw) / 180 ;
+
+            y1_zaw=3*Math.pow(x1_zaw,(5/7));
+            y2_zaw=2*Math.cos(x1_zaw_rad) + 3*Math.sin(x1_zaw_rad);
+
+            //y3_zaw=Math.sqrt(3,(Math.pow(x1_zaw),(5)) + 2 * (Math.pow(x2_zaw),(4))) * Math.abs(x1_zaw - x2_zaw);
+            //y3_zaw=Math.pow(Math.pow(x1_zaw + Math.pow(x2_zaw),5),(1/3))
+            //y3_zaw=Math.cbrt(3,(Math.pow(x1_zaw,5)) + 2 * (Math.pow(x2_zaw,4))) * Math.abs(x1_zaw - x2_zaw);
+            y3_zaw=(Math.cbrt((Math.pow(x1_zaw,5) + 2 * Math.pow(x2_zaw,4))) * Math.abs(x1_zaw - x2_zaw)).toFixed(2);
+
+            document.write("x1 = " + x1_zaw + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x2 = " + x2_zaw + "<br><br>");
+            document.write("x1 radian = " + x1_zaw_rad + "<br> x2 radian = " + x2_zaw_rad + "<br><br>")
+            document.write("y1 = " + y1_zaw + "<br>");
+            document.write("y2 = " + y2_zaw + "<br><br>");
+            document.write("y3 = " + y3_zaw + "<br><br>")
+            </script> 
+        </div> 
+    </body> 
+</html> 
