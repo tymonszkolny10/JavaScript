@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawadzki</title>
+</head>
+<body>
+    <textarea cols="150" rows="53">
+        <html>
+
+        <head>
+            <title>
+                Przykład obliczenia V i Pc walca
+            </title>
+            <script language="JavaScript">
+                function Pole_zaw(a_zaw, b_zaw) {
+                    a_zaw=parseFloat(a_zaw)
+                    b_zaw=parseFloat(b_zaw)
+                    pole_zaw=(a_zaw*b_zaw)
+                    document.getElementsByName('pole')[0].value = pole_zaw.toFixed(2);
+                    alert("Pole=" + pole_zaw.toFixed(2) + " cm^2");
+                    pokaz1.innerHTML = "P=" + pole_zaw.toFixed(2) + "cm^2";
+
+                }
+                function Obwod_zaw(a_zaw, b_zaw) {
+                    a_zaw=parseFloat(a_zaw)
+                    b_zaw=parseFloat(b_zaw)
+                    obwod_zaw=(a_zaw*2+b_zaw*2)
+                    document.getElementsByName('obw')[0].value = obwod_zaw.toFixed(2);
+                    alert("Obwód=" + obwod_zaw.toFixed(2) + " cm");
+                    pokaz2.innerHTML = "Obw=" + obwod_zaw.toFixed(2) + "cm";
+                }
+            </script>
+        </head>
+
+        <body>
+            Pobliczanie V i Pc walca
+            <br> <br>
+            <form name="formularz" action="..." onsubmit="Pole_zaw(this.a_dana_zaw.value,this.b_dana_zaw.value);
+            Obwod_zaw(this.a_dana_zaw.value,this.b_dana_zaw.value);return false">
+                Podaj a=
+                <input size="6" name="a_dana_zaw">
+                Podaj b=
+                <input size="6" name="b_dana_zaw">
+                <br> <br>
+                <input TYPE="submit" Value="oblicz">
+                <br> <br>
+                Pole=
+                <input size="6" name="pole">
+                Obwód=
+                <input size="6" name="obw">
+            </form>
+            <table>
+                <tr id="pokaz1"></tr>
+                <tr id="pokaz2"></tr>
+            </table>
+        </body>
+        </html>
+    </textarea>
+</body>
+</html>

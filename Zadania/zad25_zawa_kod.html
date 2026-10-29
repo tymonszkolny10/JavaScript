@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawadzki 2P</title>
+</head>
+<body>
+    <textarea cols="150" rows="50">
+        <!DOCTYPE html>
+        <html lang="pl">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <div style="color: blue; font-size: 50px;">
+            <script language="JavaScript">
+                var n0_zaw=prompt("Podaj N0","");
+                var t_zaw=prompt("Podaj T","");
+                var t05_zaw=prompt("Podaj T T1/2","");
+
+                lambda_zaw = (Math.LN2 / t05_zaw).toFixed(7);
+                N_zaw = Math.pow(n0_zaw, (lambda_zaw + t_zaw)).toFixed(7);
+
+                document.write("N0 = " + n0_zaw + "[sztuk]<br>");
+                document.write("t = " + t_zaw + "[lat]<br>");
+                document.write("T1/2 = " + t05_zaw + "[lat]<br>");
+                document.write("Lambda = " + lambda_zaw + "[1/rok]<br>");
+                document.write("N = " + N_zaw + "[sztuk]<br>");
+
+            </script>
+            </div>
+        </head>
+        <body>
+            
+        </body>
+        </html>
+    </textarea>
+</body>
+</html>
