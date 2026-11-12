@@ -2,7 +2,7 @@
 
 <head>
     <script language="JavaScript">
-        function Drabina_zawinski(d_zaw, x_zaw) {
+        function Drabina_zaw(d_zaw, x_zaw) {
             d_zaw=parseFloat(d_zaw)
             x_zaw=parseFloat(x_zaw)
             L_zaw=(Math.sqrt(d_zaw*d_zaw+x_zaw*x_zaw))
@@ -11,7 +11,7 @@
             pokaz1.innerHTML = "Drabina=" + L_zaw.toFixed(2);
 
         }
-        function Alfa_zawinski(d_zaw, x_zaw) {
+        function Alfa_zaw(d_zaw, x_zaw) {
             d_zaw=parseFloat(d_zaw)
             x_zaw=parseFloat(x_zaw)
             L_zaw=(Math.sqrt(d_zaw*d_zaw+x_zaw*x_zaw))
@@ -28,8 +28,8 @@
 <body>
     obliczanie odległości od drabiny i kąta
     <br> <br>
-    <form name="formularz" action="..." onsubmit="Drabina_zawinski(this.d_dana_zaw.value,this.x_dana_zaw.value);
-    Alfa_zawinski(this.d_dana_zaw.value,this.x_dana_zaw.value);return false">
+    <form name="formularz" action="..." onsubmit="Drabina_zaw(this.d_dana_zaw.value,this.x_dana_zaw.value);
+    Alfa_zaw(this.d_dana_zaw.value,this.x_dana_zaw.value);return false">
         Podaj d=
         <input size="6" name="d_dana_zaw">
         Podaj x=
