@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 32 – Zawadzki</title>
+ </head>
+<body bgcolor="yellow">
+ <div style="color:green;font-size:42px;">
+  <script type="text/javascript">
+    // konstruktor (klasa) z czterema polami
+    function Komputer(marka_k, model_k, ram_k, cena_k)
+    {
+        this.marka = marka_k;
+        this.model = model_k;
+        this.ram = ram_k;
+        this.cena = cena_k;
+    }
+
+    // metoda dodana do konstruktora przez prototype
+    Komputer.prototype.Komputer_wyswietl_zawadzki = function ()
+    {
+        document.write("Komputer: " + this.marka + " " + this.model + ", RAM: " + this.ram + ", cena: " + this.cena + " zł<br>");
+    };
+
+    // trzy obiekty
+    var komputer1 = new Komputer("Lenovo", "IdeaCentre", "32GB", 3500);
+    var komputer2 = new Komputer("Dell", "OptiPlex", "16GB", 1200);
+    var komputer3 = new Komputer("HP", "Pavilion", "8GB", 2000);
+
+    // nowa właściwość i metoda poza ciałem obiektu (z zadania 31)
+    komputer1.system = "Linux";
+    komputer1.komputer_pokaz_zawadzki = function ()
+    {
+        document.write("System komputera 1: " + this.system + "<br>");
+    };
+
+    document.write("Mój numer to 24, nazywam się Zawadzki, a obiekt to Komputer<br>");
+    document.write("Dostęp do pól komputer1, komputer2 i komputer3:<br>");
+    document.write("komputer pierwszy => " + komputer1.marka + " " + komputer1.model + " " + komputer1.ram + " " + komputer1.cena + "<br>");
+    document.write("komputer drugi => " + komputer2.marka + " " + komputer2.model + " " + komputer2.ram + " " + komputer2.cena + "<br>");
+    document.write("komputer trzeci => " + komputer3.marka + " " + komputer3.model + " " + komputer3.ram + " " + komputer3.cena + "<br>");
+    document.write("Użycie metody Komputer_wyswietl_zawadzki():<br>");
+    komputer1.Komputer_wyswietl_zawadzki();
+    komputer2.Komputer_wyswietl_zawadzki();
+    komputer3.Komputer_wyswietl_zawadzki();
+    komputer1.komputer_pokaz_zawadzki();
+  </script>
+ </div>
+ <div style="color:blue;font-size:43px;"><br>
+  Programowanie obiektowe:<br>
+  Słowo kluczowe prototype stosowane jest do dodawania nowych właściwości i metod do konstruktora, dzięki czemu mają je wszystkie obiekty (także już utworzone) i metoda nie jest kopiowana do każdego z osobna.<br>
+  Słowo kluczowe new stosowane jest do tworzenia nowego obiektu (instancji) na podstawie konstruktora, wywołuje konstruktor i ustawia this na nowy obiekt.<br>
+ </div>
+</body>
+</html>

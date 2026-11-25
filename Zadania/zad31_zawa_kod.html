@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <textarea cols="150" rows="52">
+        <!DOCTYPE html>
+        <html lang="pl">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zadanie 31 – Zawadzki</title>
+        </head>
+        <body bgcolor="lightblue">
+        <div style="color:red;font-size:47px;">
+        <script type="text/javascript">
+            // obiekt z zadania 30
+            var komputer = {
+                marka: "Lenovo",
+                model: "IdeaCentre",
+                ram: "32GB",
+                Komputer_wyswietl_zawadzki: function ()
+                {
+                    document.write("Dane obiektu komputer" + "<br>");
+                    document.write("Marka: " + this.marka + ", model: " + this.model + ", RAM: " + this.ram + "<br>");
+                }
+            };
+            komputer.Komputer_wyswietl_zawadzki();
+
+            // nowa właściwość poza ciałem obiektu
+            komputer.cena = 3500;
+
+            // nowa metoda poza ciałem obiektu
+            komputer.komputer_pokaz_zawadzki = function ()
+            {
+                document.write("Cena komputera: " + this.cena + " zł" + "<br>");
+            };
+            komputer.komputer_pokaz_zawadzki();
+        </script>
+        </div>
+        <br>
+        <div style="color:blue;font-size:48px;">
+        Mój numer w dzienniku to 24, nazywam się Tymon Zawadzki i moje dane to:<br>
+        Obiekt to komputer<br>
+        pola:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;marka<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ram<br>
+        metoda:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Komputer_wyswietl_zawadzki();<br>
+        ==========================================================<br>
+        nowe pole poza ciałem obiektu: cena (wartość 3500)<br>
+        nowa metoda poza ciałem obiektu: komputer_pokaz_zawadzki();
+        </div>
+        </body>
+        </html>
+
+    </textarea>
+
+</body>
+</html>
