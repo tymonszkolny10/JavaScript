@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="pl">
  <head>
@@ -54,3 +55,48 @@
  </div>
 </body>
 </html>
+=======
+<!DOCTYPE html> 
+<html lang="pl"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title size="2xl">Zadanie 32 – Zawadzki</title> 
+  </head> 
+<body bgcolor="yellow"> 
+  <div style="color:green;font-size:42px;"> 
+   <script type="text/javascript"> 
+              function komputer(marka_zaw,procesor_zaw,ram_zaw)   //początek konstruktora 
+  { 
+   this.marka=marka_zaw; 
+   this.procesor=procesor_zaw; 
+   this.ram=ram_zaw;   
+  }                                         //koniec konstruktora 
+              komputer.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.marka + " " + this.procesor+ " " + this.ram); 
+      }; 
+  var komputer1 = new komputer("Dell", "Intel i7", "8gb ddr4"); // nowy obiekt osoba1 
+  var komputer2 = new komputer("Lenovo", "Ryzen 5", "16gb ddr4"); // nowy obiekt osoba2 
+ 
+ komputer1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby1 z użyciem alert(); 
+ komputer2.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby2 z użyciem alert(); 
+                document.write("Moje nazwisko to ZAWADZKI  mam numer 24 a obiekt to komputer"+"<br>"); 
+                document.write("dostęp do pól komputer1 i  komputer2"+"<br>"); 
+                document.write("czyli wypisanie danych"+"<br>"); 
+ 
+// poniżej dostęp/wypisanie danych  do pól osoby1 i  osoba2 
+ document.write("klient pierwszy =>"+"   "+komputer1.marka+"   "+komputer1.procesor+"   "+komputer1.ram+"<br>"); 
+ document.write("klient drugi =>"+"   "+komputer2.marka+"   "+komputer2.procesor+"   "+komputer2.ram+"<br>"); 
+   </script> 
+ </div> 
+ <div style="color:blue;font-size:43px;"><br>    
+programowanie obiektowe: 
+Słowo kluczowe prototype stosowane jest do:<br> 
+Stosowane jest do dodawania właściwości i metod do obiektu Array<br> <br>
+Słowo kluczowe new stosowane jest do:<br> 
+Stosowane jest do stworzenia nowego obiektu
+</div> 
+</body> 
+</html>
+>>>>>>> Stashed changes
