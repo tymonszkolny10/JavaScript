@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodatkowe Zawadzki</title>
+</head>
+<body>
+    <h2>Zgadnij liczbe z przedziału od 1 do 100</h2>
+    <script>
+        var los=(Math.random()*100+1).toFixed(0);
+        var licznik = 0;
+        
+        do{
+            function losowanie() {
+                var input=parseFloat(prompt("Podaj swoj los = ",""));
+                    if(input<los){
+                        alert("Za mało!");
+                        licznik++;
+                    }
+                    else if(input>los){
+                        alert("Za dużo!");
+                        licznik++;
+                    }
+                    else {
+                        document.write("<font size=7>Zgadłeś!</font><br><br>")
+                        licznik++;
+                        document.write("<font size=7>Liczba prob: </font><br>" + licznik);
+                        document.write("Zgadles liczbe: " + los);
+                    }
+                }
+        }while(input == los)
+
+    </script>
+    <input type="button" name="przycisk" value="Zgadnij!" onclick="losowanie()" />
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z36 Zawadzki</title>
+</head>
+<body>
+    <script language="JavaScript">
+        var x=prompt("podaj liczbę x=",""); 
+        var a_dana_zaw=parseFloat(x);
+        var b_zaw = a_dana_zaw % 2;
+        //var parzysta=parseFloat((x%2)=0);
+        //var nieparzysta=parseFloat((x%2)=1);
+
+        document.write("Wczytana liczba = " + a_dana_zaw + "<br>");
+
+        if(b_zaw==0){
+            document.write("<font color=red size=3>Liczba jest parzysta</font>"+"<br>");
+        }
+        if(b_zaw!=0) {
+            document.write("<font color=silver size=5>Liczba jest nieparzysta</font>"+"<br>");
+        }
+
+    </script>
+</body>
+</html>

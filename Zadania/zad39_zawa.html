@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z39 Zawadzki</title>
+</head>
+<body>
+  <script> 
+    document.write("<h1 style=color:green>MENU</h1><br />");
+    document.write("<h1 style=color:red>1 - CZERWONY</h1>");
+    document.write("<h1 style=color:blue>2 - NIEBIESKI</h1><br />");
+
+
+    function fun_zaw() { 
+      var x_zaw = prompt("Podaj kolor", ""); 
+        if(x_zaw == 1 || x_zaw.toLowerCase() == "czerwony") { 
+
+        document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />');
+        }
+
+        else if(x_zaw == 2 || x_zaw.toLowerCase() == "niebieski") { 
+         document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br />'); 
+        } 
+    }
+ </script> 
+    <input type="button" name="Zawadzki" value="Oblicz" onclick="fun_zaw()" />
+</body>
+</html>
